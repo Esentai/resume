@@ -1,0 +1,257 @@
+<html>
+
+<head>
+  <title>Schedule</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/schedule.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+  <div class="naV">
+    <div class="container">
+      <a class="btn homeBtn" href="index.html">Home</a>
+      <a class="btn resumeBtn" href="resume.html">Resume</a>
+      <h3>Schedule</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="buttons">
+      <button id="btn1" class="button">Monday</button>
+      <button id="btn2" class="button">Tuesday</button>
+      <button id="btn3" class="button">Wednesday</button>
+      <button id="btn4" class="button">Thursday</button>
+      <button id="btn5" class="button">Friday</button>
+      <button id="btn6" class="button">Saturday</button>
+      <button id="btn7" class="button">Sunday</button>
+    </div>
+    <table id="Monday">
+      <th>10:00 - 10:50</th>
+      <td>Algebra & Geometry
+        <span>228б</span>
+      </td>
+      </tr>
+      <tr>
+        <th>11:00 - 11:50</th>
+        <td>Discrete Mathematics
+          <span>228б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>12:10 - 13:00</th>
+        <td>Foreign language
+          <span>209б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>13:10 - 14:00</th>
+        <td>Foreign language
+          <span>209б</span>
+        </td>
+      </tr>
+    </table>
+    <table class="" id="Tuesday">
+      <tr>
+        <th>08:00 - 8:50</th>
+        <td>Physical Culture
+          <span>Спортзал</span>
+        </td>
+      </tr>
+      <tr>
+        <th>09:00 - 9:50</th>
+        <td>Physical Culture
+          <span>
+            Спортзал
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <th>10:00 - 10:50</th>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th>11:00 - 11:50</th>
+        <td>Discrete Mathematics
+          <span>227б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>12:10 - 13:00</th>
+        <td>Discrete Mathematics
+          <span>227б</span>
+        </td>
+      </tr>
+    </table>
+    <table class="" id="Wednesday">
+      <tr>
+        <th>08:00 - 8:50</th>
+        <td>ICT
+          <span>800</span>
+        </td>
+      </tr>
+      <tr>
+        <th>09:00 - 9:50</th>
+        <td>Algorithms
+          <span>215б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>10:00 - 10:50</th>
+        <td>Russian language
+          <span>206б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>11:00 - 11:50</th>
+        <td>Russian language
+          <span>206б</span>
+        </td>
+      </tr>
+    </table>
+    <table class="" id="Thursday">
+      <th>10:00 - 10:50</th>
+      <td>Algorithms
+        <span>501</span>
+      </td>
+      </tr>
+      <tr>
+        <th>11:00 - 11:50</th>
+        <td>Algorithms
+          <span>501</span>
+        </td>
+      </tr>
+      <tr>
+        <th>12:10 - 13:00</th>
+        <td>Foreign language
+          <span>209б</span>
+        </td>
+      </tr>
+    </table>
+    <table class="" id="Friday">
+      <tr>
+        <th>08:00 - 8:50</th>
+        <td>ICT
+          <span>602</span>
+        </td>
+      </tr>
+      <tr>
+        <th>09:00 - 9:50</th>
+        <td>ICT
+          <span>602</span>
+        </td>
+      </tr>
+      <tr>
+        <th>10:00 - 10:50</th>
+        <td>Russian language
+          <span>206б</span>
+        </td>
+      </tr>
+      <tr>
+        <th>11:00 - 11:50</th>
+        <td>Algebra & Geometry
+          <span>701</span>
+        </td>
+      </tr>
+      <tr>
+        <th>12:10 - 13:00</th>
+        <td>Algebra & Geometry
+          <span>701</span>
+        </td>
+      </tr>
+    </table>
+    <table class="" id="Saturday">
+    </table>
+    <table class="" id="Sunday">
+    </table>
+  </div>
+  <script>
+    $(document).ready(function () {
+      var d = new Date();
+      var n = d.getDay();
+      if (n == 1) {
+        $("#btn1").addClass("buttonActive");
+        $('#Monday').css("display", "table");
+      }
+      if (n == 2) {
+        $("#btn2").addClass("buttonActive");
+        $('#Tuesday').css("display", "table");
+      }
+      if (n == 3) {
+        $("#btn3").addClass("buttonActive");
+        $('#Wednesday').css("display", "table");
+      }
+      if (n == 4) {
+        $("#btn4").addClass("buttonActive");
+        $('#Thursday').css("display", "table");
+      }
+      if (n == 5) {
+        $("#btn5").addClass("buttonActive");
+        $('#Friday').css("display", "table");
+      }
+      if (n == 6) {
+        $("#btn6").addClass("buttonActive");
+        $('#Saturday').css("display", "table");
+      }
+      if (n == 7) {
+        $("#btn7").addClass("buttonActive");
+        $('#Sunday').css("display", "table");
+      }
+      $("#btn1").click(function () {
+        def();
+        $("#btn1").addClass("buttonActive");
+        $('#Monday').css("display", "table");
+
+      });
+      $("#btn2").click(function () {
+        def();
+        $("#btn2").addClass("buttonActive");
+        $('#Tuesday').css("display", "table");
+      });
+      $("#btn3").click(function () {
+        def();
+        $("#btn3").addClass("buttonActive");
+        $('#Wednesday').css("display", "table");
+      });
+      $("#btn4").click(function () {
+        def();
+        $("#btn4").addClass("buttonActive");
+        $('#Thursday').css("display", "table");
+      });
+      $("#btn5").click(function () {
+        def();
+        $("#btn5").addClass("buttonActive");
+        $('#Friday').css("display", "table");
+      });
+      $("#btn6").click(function () {
+        def();
+        $("#btn6").addClass("buttonActive");
+        $('#Saturday').css("display", "table");
+      });
+      $("#btn7").click(function () {
+        def();
+        $("#btn7").addClass("buttonActive");
+        $('#Sunday').css("display", "table");
+      });
+    });
+    function def() {
+      document.getElementById("btn1").classList.remove("buttonActive");
+      document.getElementById("btn2").classList.remove("buttonActive");
+      document.getElementById("btn3").classList.remove("buttonActive");
+      document.getElementById("btn4").classList.remove("buttonActive");
+      document.getElementById("btn5").classList.remove("buttonActive");
+      document.getElementById("btn6").classList.remove("buttonActive");
+      document.getElementById("btn7").classList.remove("buttonActive");
+      document.getElementById("Monday").style.display = 'none';
+      document.getElementById("Tuesday").style.display = 'none';
+      document.getElementById("Wednesday").style.display = 'none';
+      document.getElementById("Thursday").style.display = 'none';
+      document.getElementById("Friday").style.display = 'none';
+      document.getElementById("Saturday").style.display = 'none';
+      document.getElementById("Sunday").style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

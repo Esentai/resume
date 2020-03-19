@@ -1,0 +1,94 @@
+body{
+    background: url('../images/fon.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:rgba(24, 33, 83, 1);
+}
+
+.mainContent{
+	background:#fff;
+	width: 1000px;
+	margin: auto;
+	display:flex;
+}
+.info{
+	width:620px;
+	padding: 0 30px;
+	position:relative;
+}
+.info h3{
+	font-size: 35px;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.subTitle{
+	margin:10px  0 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.info h4{
+	margin:30px 0 0 0;
+}
+.info_data{
+	margin: 10px 0 0 0;
+}
+.links{
+	position:absolute;
+	bottom: 30px;
+	left:0;
+	right:0;
+
+}
+.links a{
+
+background: rgba(24, 33, 83, 1);
+    color: #fff;
+    margin: 0 36px;
+    text-decoration: none;
+    padding: 10px 70px;
+    min-width: 250px;
+    font-size: 24px;
+    border-radius: 10px;
+
+}
+.links a:hover{
+    opacity: 0.8;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+	 color: white;
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.fa {
+
+    padding: 13px;
+    font-size: 32px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin: 40px 10px 0 0;
+    border-radius: 150px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

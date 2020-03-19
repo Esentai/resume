@@ -1,0 +1,281 @@
+body{
+  padding-bottom: 50px;
+  
+}
+.naV{
+  height: 60px;
+  background-color: rgba(24, 33, 83, 1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.naV div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.naV h3{
+  font-size: 30px;
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  z-index: -1;
+}
+ul.timeline:before {
+  content: ' ';
+  background: rgba(24, 33, 83, 1);
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 30px 0 45px;
+  padding-left: 20px;
+  z-index: -1;
+}
+ul.timeline > li h4{
+  margin: 0;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid rgba(24, 33, 83, 1);
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+.btn{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  font-size: 25px;
+  background-color: #fff;
+  color: rgba(24, 33, 83, 1);
+  height: 40px;
+  padding: 5px 15px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.btn:hover{
+  text-decoration: none;
+  background-color: #fff;
+  color: rgba(24, 33, 83, 1);
+  opacity: 0.8;
+}
+.homeBtn{
+  left: 15px;
+}
+.scheduleBtn{
+  right:  15px;
+  
+}
+.line{
+  height: 1px;
+  color: rgba(24, 33, 83, 1);
+  background-color: rgba(24, 33, 83, 1)
+}
+
+.skills{
+  margin-top: 20px;
+}
+
+.progressBar{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  z-index: -1;
+  /* //box-shadow: 0 1px 2px #222; */
+}
+.title{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.5;
+  z-index: 10000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  /* box-shadow: 2px 0 2px #333;
+  text-shadow: 1px 1px 1px #000; */
+}
+.progress_value{
+  position: relative;
+  float: right;
+  padding-right: 10px;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #455a64;
+  z-index: 10000;
+}
+.progress{
+  height: 40px;
+  position: absolute;
+  border-radius: 5px;
+  /* box-shadow: 2px 0 2px #555; */
+}
+.htmlColor{
+  background: #b71c1c;
+}
+.cssColor{
+  background: #4a148c;
+}
+.jsColor{
+  background: #1a237e;
+}
+.phpColor{
+  background: #1b5e20;
+}
+.ajaxColor{
+  background: #ff6f00;
+}
+.pythonColor{
+  background-color: #2d6087
+}
+.html{
+  background: #ec407a;
+}
+.css{
+  background: #ab47bc;
+}
+.js{
+  background: #5c6bc0;
+}
+.php{
+  background: #66bb6a;
+}
+.ajax{
+  background: #ffca28;
+}
+.c{
+  background: #ffca28;
+}
+.python{
+  background:#3672a3;
+}
+@media (max-width: 720px) {
+  .main{
+    width: 90%;
+  }
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  z-index: 99;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.photo{
+  text-align: center;
+  font-size: 22px;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  
+}
+.photo p {
+  margin: 10px 0;
+}
